@@ -30,6 +30,7 @@
    position: absolute;
  }
 
+
 nav{
   max-width: 82vw ;
   margin: auto;
@@ -303,7 +304,7 @@ ul li img{
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-color: rgb(45, 45, 45);
+  background-color:rgb(45,45,45);
   padding: 0 15px;
   font-size: 23px;
   cursor: pointer;
@@ -341,8 +342,20 @@ ul li img{
   transform: rotate(45deg);
 }
 
+.close > .cross{
+    animation-name: rotate_cross_to_left;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
 
-
+.open > .cross{
+    animation-name: rotate_cross_to_right;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+ }
+ 
 .underfaq{
   display: flex;
   flex-direction: column;
@@ -435,4 +448,22 @@ footer{
 }
 .miniheading2{
   margin-bottom: 150px;
+}
+
+@keyframes rotate_cross_to_right{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate_cross_to_left{
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
