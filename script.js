@@ -1,30 +1,35 @@
 const boxes = document.querySelectorAll(".boxes");
 
 boxes.forEach((box) => {
-    box.addEventListener("click", () => {
-        // Identify the answer associated with this box
-        const answer = box.nextElementSibling;
-        const plus = box.querySelector(".plus");
-        const isOpen = answer.style.maxHeight;
+  box.addEventListener("click", () => {
 
-        // Close all other answers
-        document.querySelectorAll(".boxes").forEach((otherBox) => {
-            const otherAnswer = otherBox.nextElementSibling;
-            const otherPlus = otherBox.querySelector(".plus");
+    const answer = box.nextElementSibling;
+    const plus = box.querySelector(".plus");
 
-            if (otherAnswer !== answer) {
-                otherAnswer.style.maxHeight = null;
-                otherPlus.classList.remove("active");
-            }
-        });
+    // Safety check (important for beginners)
+    if (!answer || !plus) return;
 
-        // Toggle the clicked answer
-        if (isOpen) {
-            answer.style.maxHeight = null;
-            plus.classList.remove("active");
-        } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-            plus.classList.add("active");
-        }
+    const isOpen = answer.style.maxHeight;
+
+    // Close all other FAQ items
+    boxes.forEach((otherBox) => {
+      const otherAnswer = otherBox.nextElementSibling;
+      const otherPlus = otherBox.querySelector(".plus");
+
+      if (otherAnswer && otherPlus && otherAnswer !== answer) {
+        otherAnswer.style.maxHeight = null;
+        otherPlus.classList.remove("active");
+      }
     });
+
+    // Toggle current FAQ
+    if (isOpen) {
+      answer.style.maxHeight = null;
+      plus.classList.remove("active");
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      plus.classList.add("active");
+    }
+
+  });
 });
