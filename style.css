@@ -1,124 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-.main{
+/* HERO / MAIN */
+.main {
   background-image: url(assets/IN-en-20260202-TRIFECTA-perspective_04f5de39-b518-493c-9a8d-6aef11af0457_large\ \(1\).jpg);
   min-height: 100vh;
-  max-height: 110vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 10;
-
 }
-.box{
-   height: 100vh;
-   width: 100%;
-   opacity: 0.6;
-   top: 0;
-   background-color: black;
-   position: absolute;
- }
 
-nav{
-  max-width: 82vw ;
+.box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  top: 0;
+  background-color: black;
+  position: absolute;
+}
+
+/* NAV */
+nav {
+  max-width: 82vw;
   margin: auto;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
   position: relative;
-
-
-
-  
+  z-index: 10;
 }
-.btn{
+
+.btn {
   height: 35px;
   width: 140px;
-  
-  text-align: center;
   background-color: rgba(22, 22, 22, 0.7);
-  
   color: white;
   border-radius: 8px;
-  border-color: white;
-  font-size: medium;
-  
-
+  border: 1px solid white;
 }
-.btn-red{
-  height: 38px ;
+
+.btn-red {
+  height: 38px;
   width: 84px;
   border-radius: 7px;
-  background-color: rgb(229,9,20);
+  background-color: rgb(229, 9, 20);
   color: white;
-  font-size: 15px;
-
 }
 
-.hero{
+/* HERO TEXT */
+.hero {
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
   align-items: center;
   height: 80vh;
-  width: 100vw;
   color: white;
   position: relative;
   z-index: 10;
 }
-.font-unlimited{
+
+.font-unlimited {
   font-size: 55px;
   font-weight: 900;
 }
-.subheading1{
-  margin-top: 15px;
-  font-size: large;
-  font-weight: 200;
-  
 
+.subheading1 {
+  margin-top: 15px;
 }
-.subheading2{
+
+.subheading2 {
   margin-top: 40px;
-  font-size: medium;
 }
 
-.emailplace{
+.emailplace {
   margin-top: 15px;
 }
 
-.inputbox{
-  
+.inputbox {
   width: 380px;
   height: 56px;
   padding: 16px;
-  background: rgba(22, 22, 22, 0.7); /* Netflix dark overlay */
+  background: rgba(22, 22, 22, 0.7);
   border: 1px solid rgba(128,128,128,0.7);
-  border-radius: 4px;              /* sharp rectangle */
-  color: #fff;
-  font-size: 16px;
-  outline: none;
+  border-radius: 4px;
+  color: white;
 }
 
-.netflix-input::placeholder {
-  color: #8c8c8c;
-  font-size: 14px;
-}
-
-.getstarted{
+.getstarted {
   width: 190px;
   height: 59px;
   background-color: rgb(229,9,20);
@@ -127,184 +103,58 @@ nav{
   border-radius: 8px;
 }
 
-main{
-  margin-top: 36px;
+/* MAIN CONTENT */
+main {
   background-color: black;
-  height: max-content;
-  width: 100vw;
-  position: relative;
-  z-index: 9;
+  margin-top: 36px;
 }
 
-.trending{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 184px;
-
-  width: max-content;
-  
-  height: 80px;
-  color: rgb(245, 240, 240);
-  
-
-}
-
-ul {
-  margin-top: 25px;
+/* FEATURE CARDS */
+.ulcards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  justify-content: center;
-  align-items: center;
-  gap: 40px;          /* spacing between items */
-  list-style: none;  /* remove bullets */
-  padding: 0;
-  margin: 0;
-  position: relative;
-  z-index: 9;
-  width: 80vw;              /* target size on laptops */
-  max-width: 1200px;        /* Netflix-style cap */
-  margin: 25px auto;  
-}
-
-ul li {
-  position: relative;
-  
-  white-space: nowrap;
- 
-}
-
-ul li img{
-  border-radius: 8px;
-}
-
-.number{
-    /* display: inline-flex; */
-    top: 164px;
-    left: -23px;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-    padding: 0;
-    font-size: 100px;
-    color: rgb(11, 10, 10);
-    font-weight: 750;
-    position: absolute;
-    /* top: 153px; */
-    -webkit-text-stroke: 2px #faf7f7;
-    text-shadow: white;
-}
-
-
-
-.reasons{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 112px;
-
-  width: max-content;
-  
-  height: max-content;
-  color: rgb(245, 240, 240);
-  font-size: large;
-  
-}
-
-.ulcards{
-    
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  justify-content: center;
-  align-items: center;
-  gap: 40px;          /* spacing between items */
-  list-style: none;  /* remove bullets */
-  padding: 0;
-  margin: 0;
-  position: relative;
-  z-index: 9;
-  width: 85vw;              /* target size on laptops */
-  max-width: 1400px;        /* Netflix-style cap */
+  gap: 40px;
+  width: 85vw;
   margin: 10px auto;
-  
-  min-height: 250px;
 }
 
-.indicards{
+.indicards {
   padding: 25px 15px;
-  white-space: normal;
-  
-    background: radial-gradient(
-      circle at top left,
-      rgba(120, 80, 255, 0.25),
-      transparent 60%
-    ),
-    linear-gradient(
-      135deg,
-      #0b0c1d,
-      #130c22,
-      #1a0f2e
-    );
-  
-
   border-radius: 10px;
   height: 230px;
+  background: linear-gradient(135deg, #0b0c1d, #1a0f2e);
   color: gray;
-  overflow: hidden;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.text{
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  font-size: medium;
-  color: gray;
-  
-  
+.indicards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.text h2{
+.text h2 {
   color: white;
 }
 
-.faq{
+/* FAQ SECTION */
+.faq {
   color: white;
-    display: flex;
-  flex-direction: column;
-  margin: 2px auto;
-    width: 80vw;
-  max-width: 1400px;
-  z-index: 9;
-  
-  
-
+  width: 80vw;
+  margin: auto;
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.header{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 80vw;
-  max-width: 1400px;
-  position: relative;
-  margin-bottom: 20px;
-}
-
 .boxes {
   height: 70px;
-  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
- 
-  background-color:rgb(45,45,45);
+  background-color: rgb(45,45,45);
   padding: 0 15px;
   font-size: 23px;
   cursor: pointer;
@@ -312,128 +162,27 @@ ul li img{
 }
 
 .boxes:hover {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(65,65,65);
 }
 
-.faqbox {
-  transition: all 0.2s;
-}
-
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  background-color: rgb(45, 45, 45);
-  width: 80vw;
-  color: white;
-  font-size: 20px;
-  margin-top: 2px;
-  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-}
-
-.answer p {
-  padding: 20px;
-}
-
+/* FAQ PLUS ICON ROTATION (MAIN FIX) */
 .plus {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  font-size: 26px;
 }
 
 .plus.active {
-  transform: rotate(45deg);
+  transform: rotate(45deg); /* + → × */
 }
 
-
-
-.underfaq{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-.subheading{
-  margin-top: 80px;
-
-  color: white;
-}
-
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  
+/* FOOTER */
+footer {
+  color: rgb(196,190,190);
   margin: 70px auto;
-  color: rgb(196, 190, 190);
-  cursor: pointer;
-  
 }
-
-.footerstarter{
-  
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  margin: 2px auto;
-}
-
 
 .footergrid {
-  
-  width: 82vw;
-  max-width: 1600px;
-  position: relative;
-  z-index: 9;
-  
-  margin: 20px auto;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
-  
-  align-items: start;
-  
-  gap: 24px;
-  
-}
-
-.box1{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  row-gap: 18px;
-  height: 200px;
-  
-  text-decoration: underline;
-  
-  font-size: small;
-  padding: 20px;
-}
-
-
-.last{
-  width: 82vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 1600px;
-  position: relative;
-  z-index: 9;
-  
-  margin: 20px auto;
-  color: rgb(196, 190, 190);
-  font-size: small;
-  row-gap: 45px;
-  
-  
-
-}
-.miniheading1{
-  font-size: medium;
-
-}
-.miniheading2{
-  margin-bottom: 150px;
 }
