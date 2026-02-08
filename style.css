@@ -437,3 +437,46 @@ footer{
 .miniheading2{
   margin-bottom: 150px;
 }
+
+/* FEATURE CARDS SECTION */
+.features {
+  background: black;
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* CARD STYLES */
+.card {
+  background: #141414;
+  padding: 30px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
+
+  /* Smooth transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECTS (MAIN TASK) */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(255, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+
+.card p {
+  color: #ccc;
+  font-size: 14px;
+}
